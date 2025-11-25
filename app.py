@@ -4,7 +4,7 @@ HTML = """
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Proyecto Andrade</title>
+    <title>Proyecto Andrade 2</title>
 </head>
 <body>
     <h1>Bienvenido al Proyecto Andrade</h1>
