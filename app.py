@@ -4,10 +4,10 @@ HTML = """
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Proyecto Andrade 2</title>
+    <title>Proyecto Andrade</title>
 </head>
 <body>
-    <h1>Bienvenido al Proyecto Andrade</h1>
+    <h1>Bienvenido al Proyecto Jeremy Examen </h1>
     <p>Desplegado con CI/CD + Docker Swarm</p>
 </body>
 </html>
