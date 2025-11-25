@@ -1,17 +1,29 @@
-from flask import Flask, jsonify, request
+from flask import Flask, render_template_string
 
-app = Flask(__name__)
+HTML = """
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Proyecto Andrade</title>
+</head>
+<body>
+    <h1>Bienvenido al Proyecto Andrade</h1>
+    <p>Desplegado con CI/CD + Docker Swarm</p>
+</body>
+</html>
+"""
 
-@app.get("/")
-def home():
-    return jsonify({"message": "API Andrade funcionando"}), 200
+def create_app():
+    app = Flask(__name__)
 
-@app.post("/sumar")
-def sumar():
-    data = request.get_json()
-    a = data.get("a", 0)
-    b = data.get("b", 0)
-    return jsonify({"resultado": a + b})
+    @app.get("/")
+    def home():
+        return render_template_string(HTML)
+
+    return app
+
+
+app = create_app()
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
