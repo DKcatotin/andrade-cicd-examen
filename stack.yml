@@ -21,7 +21,7 @@ services:
         - "traefik.http.routers.andrade-secure.tls.certresolver=http"
         - "traefik.http.routers.andrade-secure.service=andrade"
 
-        # Puerto interno real de tu app Flask → 8080
+        # ⭐ Puerto interno real de la app Flask
         - "traefik.http.services.andrade.loadbalancer.server.port=8080"
 
         # Red de Traefik
