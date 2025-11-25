@@ -10,4 +10,4 @@ def client():
 def test_home(client):
     response = client.get("/")
     assert response.status_code == 200
-    assert b"Bienvenido al Proyecto Andrade" in response.data
+    assert b"Bienvenido al Proyecto Jeremy Examen " in response.data
