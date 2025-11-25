@@ -51,7 +51,7 @@ jobs:
         password: ${{ secrets.GITHUB_TOKEN }}
 
     # ---------------------------------------------------------
-    # BUILD + PUSH DOCKER IMAGE
+    # BUILD + PUSH DOCKER IMAGEn
     # ---------------------------------------------------------
     - name: 🏗️ Build & Push Docker image
       uses: docker/build-push-action@v6
