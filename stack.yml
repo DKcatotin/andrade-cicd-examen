@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   andrade:
-    image: ghcr.io/REPLACE_WITH_OWNER/andrade:1.0.5
+    image: ghcr.io/dkcatotin/andrade:1.0.5
     deploy:
       replicas: 1
       labels:
